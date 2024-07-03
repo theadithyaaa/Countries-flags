@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        h1{
+            text-align: center;
+          
+        }
+        body {
+            background-color: #000;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .result img {
+            max-width: 100px;
+            margin-top: 10px;
+        }
+
+        .countries-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .country-card {
+            background-color: #555;
+            margin: 10px;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+            width: 200px;
+            text-align: center;
+        }
+    
+
+        .country-card img {
+            max-width: 100px;
+            margin-bottom: 10px;
+        }
+
+        .form-container {
+            width: 100%;
+            max-width: 400px;
+            margin-bottom: 20px;
+        }
+
+        .form-control {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Country Info 🔍</h1>
+
+    <div class="container form-container">
+        <input type="text" id="txtSearchValue" class="form-control" placeholder="නම ගහන්න">
+        <button class="btn btn-primary btn-block" onclick="searchCountry()">Search</button>
+    </div>
+
+    <div class="result text-center mb-4">
+        <div id="img"></div>
+        <h1 id="name"></h1>
+        <h3 id="offitalName"></h3>
+        <h5 id="Region"></h5>
+        <h5 id="capital"></h5>
+        <h5 id="population"></h5>
+        
+
+        
+        
+    </div>
+
+    <div id="countriesContainer" class="countries-container"></div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
